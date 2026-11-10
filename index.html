@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e8dfcb">
+  <title>Who Am I Becoming? | Lloyd Axel N. Aquende</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-lock">
+
+  <!-- CUSTOM CURSOR ELEMENTS -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox"><img src="" alt=""></div>
+
+  <!-- NAVIGATION -->
+
+  <nav aria-label="Main navigation">
+    <div class="brand">
+      Lloyd Axel N. Aquende <small>• BSIT-2A</small>
+    </div>
+
+    <ul class="nav-links">
+      <li><button class="nav-btn active" data-target="home" onclick="switchTab('home', this)">Begin</button></li>
+      <li><button class="nav-btn" data-target="part-1" onclick="switchTab('part-1', this)">Journey</button></li>
+      <li><button class="nav-btn" data-target="part-2" onclick="switchTab('part-2', this)">Create</button></li>
+      <li><button class="nav-btn" data-target="reflection" onclick="switchTab('reflection', this)">Reflect</button></li>
+      <li><button class="nav-btn" data-target="appendices" onclick="switchTab('appendices', this)">Appendices</button></li>
+      <li><button class="nav-btn" data-target="consent" onclick="switchTab('consent', this)">Consent</button></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- HOME PAGE -->
+
+    <section id="home" class="page-section theme-khaki is-visible">
+      <div class="minimal-home">
+        <div class="hero-kicker">An ongoing study of self &amp; creativity</div>
+
+        <h1 class="hero-title">
+          Who Am I<br>
+          <em>Becoming?</em>
+        </h1>
+
+        <button class="enter-btn" onclick="switchTab('part-1', document.querySelector('[data-target=part-1]'))">
+          Explore Portfolio <span>↗</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- JOURNEY PAGE -->
+
+    <section id="part-1" class="page-section theme-sand">
+      <div class="section-topline">
+        <span>Art Appreciation · Personal Archive</span>
+        <span>01 / 05</span>
+      </div>
+
+      <div class="section-header">
+        <h2>My Art Appreciation<br>Journey</h2>
+        <span class="section-number">Part I</span>
+      </div>
+
+      <p class="section-intro">
+        Choose an activity to explore its details and supporting work.
+      </p>
+
+      <div class="journey-list">
+
+        <button class="journey-item" onclick="switchTab('activity-01')">
+          <span class="journey-num">01</span>
+          <span class="journey-info">
+            <h3>Scribble</h3>
+            <p>"A Person's Hobby" — finding shapes inside a tangle of lines.</p>
+          </span>
+          <span class="journey-tag">Open activity ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('activity-02')">
+          <span class="journey-num">02</span>
+          <span class="journey-info">
+            <h3>Book Spine Poem</h3>
+            <p>Group 4 – Loss: poems made from stacked book titles.</p>
+          </span>
+          <span class="journey-tag">Open activity ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('activity-03')">
+          <span class="journey-num">03</span>
+          <span class="journey-info">
+            <h3>Coffee Painting</h3>
+            <p>"Fading Into Light" — painting with coffee instead of paint.</p>
+          </span>
+          <span class="journey-tag">Open activity ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('activity-04')">
+          <span class="journey-num">04</span>
+          <span class="journey-info">
+            <h3>Blackout Poetry</h3>
+            <p>Carving a new message out of a newspaper article.</p>
+          </span>
+          <span class="journey-tag">Open activity ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('activity-05')">
+          <span class="journey-num">05</span>
+          <span class="journey-info">
+            <h3>AI Recreation</h3>
+            <p>"Epistle in Progress" — reimagining Rembrandt's The Apostle Paul.</p>
+          </span>
+          <span class="journey-tag">Open activity ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('activity-06')">
+          <span class="journey-num">06</span>
+          <span class="journey-info">
+            <h3>Painting</h3>
+            <p>A cubist-inspired figure built from bold planes of color.</p>
+          </span>
+          <span class="journey-tag">Open activity ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('activity-07')">
+          <span class="journey-num">07</span>
+          <span class="journey-info">
+            <h3>Multimedia</h3>
+            <p>A short video exploring sacred art and reflection in a chapel.</p>
+          </span>
+          <span class="journey-tag">Open activity ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('activity-08')">
+          <span class="journey-num">08</span>
+          <span class="journey-info">
+            <h3>Film Analysis</h3>
+            <p>A second video output for the course.</p>
+          </span>
+          <span class="journey-tag">Open activity ↗</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ARTWORKS PAGE -->
+
+    <section id="part-2" class="page-section theme-khaki">
+      <div class="section-topline">
+        <span>Selected Works · Creative Practice</span>
+        <span>02 / 05</span>
+      </div>
+
+      <div class="section-header">
+        <h2>Made by Hand</h2>
+        <span class="section-number">Part II</span>
+      </div>
+
+      <p class="section-intro">
+        Choose a piece to see its details and the process behind it.
+      </p>
+
+      <div class="journey-list">
+
+        <button class="journey-item" onclick="switchTab('p2-sketch')">
+          <span class="journey-num">01</span>
+          <span class="journey-info">
+            <h3>Sketch</h3>
+            <p>A hand-drawn original work.</p>
+          </span>
+          <span class="journey-tag">Open work ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('p2-photography')">
+          <span class="journey-num">02</span>
+          <span class="journey-info">
+            <h3>Photography</h3>
+            <p>An original photographic work.</p>
+          </span>
+          <span class="journey-tag">Open work ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('p2-digital')">
+          <span class="journey-num">03</span>
+          <span class="journey-info">
+            <h3>Digital Art</h3>
+            <p>An original digital work.</p>
+          </span>
+          <span class="journey-tag">Open work ↗</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- REFLECTION PAGE -->
+
+    <section id="reflection" class="page-section theme-sand">
+      <div class="section-topline">
+        <span>Personal Notes · Learning &amp; Growth</span>
+        <span>03 / 05</span>
+      </div>
+
+      <div class="section-header">
+        <h2>Looking Forward</h2>
+        <span class="section-number">Reflection</span>
+      </div>
+
+      <p class="section-intro">
+        What I learned about art, and what it taught me about myself.
+      </p>
+
+      <div class="reflection-layout">
+        <p>
+          Stepping outside the structured logic of software development and routine technical problem-solving required a shift in perspective. Art appreciation provided a space where exact solutions do not always take precedence, allowing room for trial, observation, and intentional design.
+        </p>
+
+        <p>
+          Working with unfamiliar physical mediums—handling clay, timing lighting for photography, and structuring non-digital art—highlighted the friction between idea and execution. Unlike writing code, physical materials carry unpredictability. Learning to adapt to material constraints shifted my view of mistakes from errors to refine, into meaningful details to integrate into the overall piece.
+        </p>
+
+        <p>
+          Through this portfolio, the journey of creation served as a lens for self-discovery. Moving forward, I see myself growing into an analytical yet expressive practitioner—someone who values structure, efficiency, and logic while maintaining an appreciation for form, human experience, and creative intent.
+        </p>
+
+        <div class="closing-quote">
+          “Art doesn’t ask to be understood. It asks to be noticed.”
+        </div>
+      </div>
+    </section>
+
+        <!-- APPENDICES PAGE -->
+
+    <section id="appendices" class="page-section theme-khaki">
+      <div class="section-topline">
+        <span>Supporting Material · Documentation</span>
+        <span>04 / 05</span>
+      </div>
+
+      <div class="section-header">
+        <h2>Behind the Work</h2>
+        <span class="section-number">Appendices</span>
+      </div>
+
+      <p class="section-intro">
+        Choose a piece to open its supporting document and proof of creation.
+      </p>
+
+      <div class="journey-list">
+
+        <button class="journey-item" onclick="switchTab('app-sketch')">
+          <span class="journey-num">I.</span>
+          <span class="journey-info">
+            <h3>Sketch</h3>
+            <p>Supporting document for my sketch.</p>
+          </span>
+          <span class="journey-tag">Open document ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('app-photography')">
+          <span class="journey-num">II.</span>
+          <span class="journey-info">
+            <h3>Photography</h3>
+            <p>Supporting document for my photograph.</p>
+          </span>
+          <span class="journey-tag">Open document ↗</span>
+        </button>
+
+        <button class="journey-item" onclick="switchTab('app-digital')">
+          <span class="journey-num">III.</span>
+          <span class="journey-info">
+            <h3>Digital Art</h3>
+            <p>Supporting document for my digital artwork.</p>
+          </span>
+          <span class="journey-tag">Open document ↗</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- CONSENT PAGE -->
+
+    <section id="consent" class="page-section theme-sand">
+      <div class="section-topline">
+        <span>Academic Declaration · Release</span>
+        <span>05 / 05</span>
+      </div>
+
+      <div class="section-header">
+        <h2>Consent Form</h2>
+        <span class="section-number">Institutional Release</span>
+      </div>
+
+      <div class="consent-box">
+        <div class="eyebrow">Student Educational Release Consent</div>
+
+        <h3>Acknowledgment &amp; Permission</h3>
+
+        <p>
+          I hereby grant permission for this Individual Digital Art Portfolio and its contained original artworks to be utilized as evidence of student learning or included in institutional exhibitions and academic archives.
+        </p>
+
+        <p class="consent-status">
+          <strong>Selection Status:</strong> Granted / Consented<br>
+          <strong>Student:</strong> Lloyd Axel N. Aquende · BSIT-2A<br>
+          <strong>Date:</strong> Semester Final Evaluation, 2026
+        </p>
+      </div>
+    </section>
+
+
+    <!-- activity-01 -->
+    <section id="activity-01" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Journey · Activity 01</span><span>Drawing</span></div>
+      <div class="section-header">
+        <h2>Scribble</h2>
+        <span class="section-number">01</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+        <figure class="media-figure">
+          <img src="scribble.png" alt="A Person's Hobby scribble drawing" loading="lazy">
+          <figcaption>"A Person's Hobby"</figcaption>
+        </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>"A Person's Hobby" began as one continuous, looping scribble covering the whole page. I then looked for shapes hiding inside the tangle, colored them in, and connected them with red lines running through the chaos.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned that structure can come after the mess. Starting without a plan took pressure off, and finding forms inside the lines showed me how much of art is simply noticing. The red lines also taught me how separate parts of one subject can still be connected.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-1')">← Back to Journey</button>
+    </section>
+
+    <!-- activity-02 -->
+    <section id="activity-02" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Journey · Activity 02</span><span>Group Poetry</span></div>
+      <div class="section-header">
+        <h2>Book Spine Poem</h2>
+        <span class="section-number">02</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid cols-2">
+        <figure class="media-figure">
+          <img src="Book01.png" alt="Group 4 - Loss members" loading="lazy">
+          <figcaption>Group 4 – Loss</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="Book04.png" alt="Unedited photos of the book spine poems" loading="lazy">
+          <figcaption>Unedited photos</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="Book02.png" alt="The Shape of Absence poem" loading="lazy">
+          <figcaption>The Shape of Absence</figcaption>
+        </figure>
+        <figure class="media-figure">
+          <img src="Book03.png" alt="The Garden Left Behind poem" loading="lazy">
+          <figcaption>The Garden Left Behind</figcaption>
+        </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>With Group 4, under the theme of Loss, we picked books from the library and stacked them so the titles on their spines read as a poem. We made two: "The Shape of Absence" and "The Garden Left Behind." All members helped with both.</p>
+            <p><strong>Members:</strong> Aquende, Lloyd Axel · Balazon, Kirk Jedrik · Gumila, Naika Ishi (Leader) · Lat, Pauline Mae · Melendrez, Lee Andrei · Posadas, Arvin John · Raboy, Liam Paul · Villanueva, Julien John</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned that meaning can be found in things that already exist. We didn't write a single word, yet the order of the titles carried a feeling of loss. It also showed me how teamwork shapes a piece: every member's choice changed what the poem became.</p>
+          </div>
+          <div class="info-block wide">
+            <div class="activity-content-label">The Poems</div>
+            <div class="poem-pair">
+              <div class="poem">
+                <h4>The Shape of Absence</h4>
+                <p>Edges of Reality<br>The Long Darkness<br>Nothing more<br>A time gone by</p>
+              </div>
+              <div class="poem">
+                <h4>The Garden Left Behind</h4>
+                <p>In the midst of winter<br>In search of our mothers' gardens<br>My mother was right<br>Nothing ever breaks except the heart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-1')">← Back to Journey</button>
+    </section>
+
+    <!-- activity-03 -->
+    <section id="activity-03" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Journey · Activity 03</span><span>Painting</span></div>
+      <div class="section-header">
+        <h2>Coffee Painting</h2>
+        <span class="section-number">03</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+        <figure class="media-figure">
+          <img src="Coffee.png" alt="Fading Into Light coffee painting" loading="lazy">
+          <figcaption>"Fading Into Light"</figcaption>
+        </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>"Fading Into Light" is a painting made with coffee as the only pigment. Layered washes make up the warm background, a bare tree is painted in darker strokes, and the moon is left as untouched white paper.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned that art can be made from ordinary materials. Coffee has to be built up in layers to control how light or dark it gets, and I couldn't fully control how it spread. Leaving the moon unpainted also showed me how empty space can be the brightest part of a piece.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-1')">← Back to Journey</button>
+    </section>
+
+    <!-- activity-04 -->
+    <section id="activity-04" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Journey · Activity 04</span><span>Poetry · Mixed Media</span></div>
+      <div class="section-header">
+        <h2>Blackout Poetry</h2>
+        <span class="section-number">04</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+        <figure class="media-figure">
+          <img src="Blackout.jfif" alt="Blackout poetry made from a newspaper article" loading="lazy">
+          <figcaption>Blackout poem with teacher feedback</figcaption>
+        </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>I made this blackout poem from a newspaper article about a basketball player's final game. I circled a handful of words and inked and hatched everything else in dark and copper tones, so the remaining words read as a short poem about a farewell.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned that choosing what to remove matters as much as choosing what to keep. The same article became a different story once most of it was hidden. My teacher's note, "you could've ended here," also taught me about restraint and knowing when a piece already says enough.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-1')">← Back to Journey</button>
+    </section>
+
+    <!-- activity-05 -->
+    <section id="activity-05" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Journey · Activity 05</span><span>Digital · AI-Assisted</span></div>
+      <div class="section-header">
+        <h2>AI Recreation</h2>
+        <span class="section-number">05</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+        <figure class="media-figure">
+          <img src="AI.png" alt="Rembrandt's The Apostle Paul beside Epistle in Progress" loading="lazy">
+          <figcaption>Rembrandt, "The Apostle Paul" (1657) · Aquende, "Epistle in Progress" (2026)</figcaption>
+        </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>"Epistle in Progress" reimagines Rembrandt's "The Apostle Paul" (1657). The writer at his desk becomes a student with a mug and a laptop, surrounded by stacked books, while the composition, dark warm palette, and dramatic lighting stay faithful to the original.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned how classical principles such as composition, chiaroscuro, and a focused light source still work in a modern setting. Placing the two works side by side helped me see how the idea of "someone writing at work" carries across centuries. It also showed me that guiding AI well depends on already understanding what makes the original work.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-1')">← Back to Journey</button>
+    </section>
+
+    <!-- activity-06 -->
+    <section id="activity-06" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Journey · Activity 06</span><span>Painting</span></div>
+      <div class="section-header">
+        <h2>Painting</h2>
+        <span class="section-number">06</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+        <figure class="media-figure">
+          <img src="painting.png" alt="Cubist-style figure playing a guitar" loading="lazy">
+          <figcaption>Cubist-inspired figure with guitar</figcaption>
+        </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>A reclining figure playing a guitar, broken into flat planes of saturated color and held together with thick black outlines. Warm browns for the floor, wall, and guitar keep the bright shapes grounded.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned how a figure can be taken apart into shapes and still be recognizable. The black outlines kept the colors from clashing, and the browns gave the bright planes somewhere to rest. Working this way pushed me to see form and color as separate decisions.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-1')">← Back to Journey</button>
+    </section>
+
+    <!-- activity-07 -->
+    <section id="activity-07" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Journey · Activity 07</span><span>Video</span></div>
+      <div class="section-header">
+        <h2>Multimedia</h2>
+        <span class="section-number">07</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+        <figure class="media-figure">
+          <video controls preload="metadata" playsinline>
+            <source src="multimedia.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Multimedia output</figcaption>
+        </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>A short video filmed inside a chapel. It moves between wooden sculptures, carved relief panels, stained-glass windows, and a figure standing and praying before the cross, using low angles and natural light.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned that video tells a story through framing, angles, and pacing, not just through what is in front of the camera. Cutting between close details and wide shots helped me show both the artwork and the quiet atmosphere around it. It also taught me to plan shots around the available light.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-1')">← Back to Journey</button>
+    </section>
+
+    <!-- Change video2.mp4 to your real file name, then edit the title and texts -->
+    <!-- activity-08 -->
+    <section id="activity-08" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Journey · Activity 08</span><span>Video</span></div>
+      <div class="section-header">
+        <h2>Additional Video</h2>
+        <span class="section-number">08</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+        <figure class="media-figure">
+          <video controls preload="metadata" playsinline>
+            <source src="TEAM FILM_ Sunshine.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Additional video output</figcaption>
+        </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>This video is my analysis of the film <em>Sunshine</em> (2024), starring Maris Racal as a young gymnast whose Olympic dreams are disrupted by an unexpected turn in her life. Following the Observe, Analyze, Contextualize, Interpret, and Judge framework, I look closely at key scenes, including those set in Quiapo. I examine how the cinematography, setting, performances, and use of sound express the character's pressure, struggle, and resilience. I then place the film in its social context and give my own judgment of its message and impact.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned that watching a film critically means looking beyond the story to how it is told. Observing first and interpreting later helped me notice details such as framing, location, body language, and silence, and how each carries meaning. Studying Maris Racal's performance showed me how much emotion an actor can convey through small gestures and expressions. The Quiapo scenes taught me that a setting can reflect a character's inner state and social reality. Analyzing the film also deepened my understanding of the pressures young people face when their dreams and their circumstances collide, and it helped me form and defend my own judgment with evidence from the film.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-1')">← Back to Journey</button>
+    </section>
+
+    <!-- p2-sketch -->
+    <section id="p2-sketch" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Part II · Work 01</span><span>Sketch</span></div>
+      <div class="section-header">
+        <h2>Sketch</h2>
+        <span class="section-number">01</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+          <figure class="media-figure">
+            <img src="sketchone.png" alt="My sketch" loading="lazy">
+              <figcaption>Beauty of Nature</figcaption>
+          </figure>
+      </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>This pencil sketch illustrates a vase filled with different flowers and leaves. It uses simple lines, shapes, and shading to create depth and represent the beauty of nature.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>Creating this sketch taught me the importance of observation and the use of negative space to enhance the composition.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-2')">← Back to Part II</button>
+    </section>
+
+    <!-- p2-photography -->
+    <section id="p2-photography" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Part II · Work 02</span><span>Photography</span></div>
+      <div class="section-header">
+        <h2>Photography</h2>
+        <span class="section-number">02</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+          <figure class="media-figure">
+            <img src="photography.png" alt="My photograph" loading="lazy">
+            <figcaption>A Moment with My Furry Friend</figcaption>
+          </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>This photograph captures a fluffy cat sitting and looking directly at the camera. The lighting and background help emphasize the cat's facial features and beautiful fur.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned about composition, lighting, and the importance of capturing genuine moments in photography.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-2')">← Back to Part II</button>
+    </section>
+
+    <!-- p2-digital -->
+    <section id="p2-digital" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Part II · Work 03</span><span>Digital Art</span></div>
+      <div class="section-header">
+        <h2>Digital Art</h2>
+        <span class="section-number">03</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+          <figure class="media-figure">
+            <img src="digital1.png" alt="My digital artwork" loading="lazy">
+            <figcaption>A Spark of Creativity</figcaption>
+          </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">Description</div>
+            <p>This digital artwork features Pikachu, created using a digital drawing tablet and stylus. I used colors, shapes, and outlines to bring the character to life.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">What I Learned</div>
+            <p>I learned how to use digital drawing tools, experiment with colors, and improve my control when creating illustrations. I also discovered how digital art makes editing and enhancing artwork easier.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('part-2')">← Back to Part II</button>
+    </section>
+        <!-- app-sketch -->
+    <section id="app-sketch" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Appendix · Supporting Document I</span><span>Sketch</span></div>
+      <div class="section-header">
+        <h2>Sketch</h2>
+        <span class="section-number">I.</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+          <figure class="media-figure">
+            <img src="sketch.png" alt="Pencil sketch of flowers in a round vase" loading="lazy">
+            <figcaption>Proof of creation: pencil sketch in my sketchbook</figcaption>
+          </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">What This Proof Shows</div>
+            <p>A photo of my hand-drawn graphite sketch in a spiral sketchbook. It shows flowers arranged in a round vase, with a cast shadow beside it.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">Process Notes</div>
+            <p>I drew the main shapes first, then built up the details of the flowers and the vase. I finished with shading to give the vase volume and the shadow depth.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('appendices')">← Back to Appendices</button>
+    </section>
+
+    <!-- app-photography -->
+    <section id="app-photography" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Appendix · Supporting Document II</span><span>Photography</span></div>
+      <div class="section-header">
+        <h2>Photography</h2>
+        <span class="section-number">II.</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+          <figure class="media-figure">
+            <img src="cat.png" alt="Fluffy cream cat with a bell collar looking at the camera" loading="lazy">
+            <figcaption>Proof of creation: original photograph</figcaption>
+          </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">What This Proof Shows</div>
+            <p>The original photograph I took: a fluffy cream-colored cat with a small bell on its collar, looking straight into the camera in an indoor setting.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">Process Notes</div>
+            <p>I framed the cat at eye level so its gaze is the focus of the shot. I took the photo in the available indoor light, without a studio setup.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('appendices')">← Back to Appendices</button>
+    </section>
+
+    <!-- app-digital -->
+    <section id="app-digital" class="page-section theme-sand activity-detail">
+      <div class="section-topline"><span>Appendix · Supporting Document III</span><span>Digital Art</span></div>
+      <div class="section-header">
+        <h2>Digital Art</h2>
+        <span class="section-number">III.</span>
+      </div>
+
+      <div class="activity-content">
+        <div class="media-grid single">
+          <figure class="media-figure">
+            <img src="digital.png" alt="Drawing Pikachu on a tablet with a stylus" loading="lazy">
+            <figcaption>Proof of creation: drawing on the tablet</figcaption>
+          </figure>
+        </div>
+        <div class="info-grid">
+          <div class="info-block">
+            <div class="activity-content-label">What This Proof Shows</div>
+            <p>A photo of my tablet and stylus while I was working on the digital drawing. The drawing app's tools are visible on the screen next to the artwork in progress.</p>
+          </div>
+          <div class="info-block">
+            <div class="activity-content-label">Process Notes</div>
+            <p>I drew the outlines first, then filled in the colors and details with the stylus. Working in a drawing app let me adjust and correct my lines as I went.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="back-btn" onclick="switchTab('appendices')">← Back to Appendices</button>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer id="site-footer">
+    <span>Art Appreciation (GEARTS) · Individual Digital Art Portfolio</span>
+    <span class="footer-mark">Lloyd Axel N. Aquende · 2026</span>
+  </footer>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
